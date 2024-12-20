@@ -2,6 +2,8 @@ module github.com/jayme-github/fritzbox_smarthome_exporter
 
 go 1.17
 
+replace github.com/bpicode/fritzctl => github.com/matthiasfraass/fritzctl v1.4.24_mf
+
 require (
 	github.com/bpicode/fritzctl v1.4.24-0.20210413183853-48944781b59f
 	github.com/namsral/flag v1.7.4-pre

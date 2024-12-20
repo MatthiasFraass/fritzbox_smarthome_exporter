@@ -126,6 +126,10 @@ func main() {
 		options = append(options, fritz.Certificate(crt))
 	}
 
+	if fbURL.RequestURI() != "/" {
+		options = append(options, fritz.AuthEndpoint(fbURL.RequestURI()))
+	}
+
 	fritzClient = NewClient(options...)
 
 	if err := fritzClient.SafeLogin(); err != nil {
