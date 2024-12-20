@@ -27,5 +27,3 @@ require (
 	google.golang.org/protobuf v1.21.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
-
-replace github.com/bpicode/fritzctl => github.com/jayme-github/fritzctl v1.4.23-0.20220609211037-25a9f8556e3b
